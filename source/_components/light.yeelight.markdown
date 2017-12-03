@@ -1,8 +1,8 @@
 ---
 layout: page
-title: "Yeelight Wifi Bulb"
+title: "Yeelight Wifi Light"
 description: "Instructions how to setup Yeelight Wifi devices within Home Assistant."
-date: 2016-10-29
+date: 2017-12-03
 sidebar: true
 comments: false
 sharing: true
@@ -13,7 +13,7 @@ ha_release: 0.32
 ha_iot_class: "Local Polling"
 ---
 
-The `yeelight` light platform allows you to control your Yeelight Wifi bulbs with Home Assistant.
+The `yeelight` light platform allows you to control your Yeelight Wifi lights with Home Assistant.
 
 ### {% linkable_title Example configuration %}
 
@@ -42,13 +42,13 @@ Configuration variables:
 - **save_on_change** (*Optional*, default True): Saves the bulb state when changed from Home Assistant.
 
 #### {% linkable_title Music mode  %}
-Per default the bulb limits the amount of requests per minute to 60, a limitation which can be bypassed by enabling the music mode. In music mode the bulb is commanded to connect back to a socket provided by the component and it tries to keep the connection open, which may not be wanted in all use-cases.
+Per default the device limits the amount of requests per minute to 60, a limitation which can be bypassed by enabling the music mode. In music mode the device is commanded to connect back to a socket provided by the component and it tries to keep the connection open, which may not be wanted in all use-cases.
 
 ### {% linkable_title Initial setup %}
 <p class='note'>
-Before trying to control your light through Home Assistant, you have to setup your bulb using Yeelight app. ( [Android](https://play.google.com/store/apps/details?id=com.yeelight.cherry&hl=fr), [IOS](https://itunes.apple.com/us/app/yeelight/id977125608?mt=8) ).
-In the bulb property, you have to enable "LAN Mode" (previously called "Developer mode"). LAN mode may only be available with the latest firmware installed on your bulb.  Firmware can be updated in the application after connecting the bulb.
-Determine your bulb IP (using router, software, ping ...)
+Before trying to control your light through Home Assistant, you have to setup it using Yeelight app first. ( [Android](https://play.google.com/store/apps/details?id=com.yeelight.cherry&hl=fr), [IOS](https://itunes.apple.com/us/app/yeelight/id977125608?mt=8) ).
+In the device property, you have to enable "LAN Mode" (previously called "Developer mode"). LAN mode may only be available with the latest firmware installed on your device.  Firmware can be updated in the application after connecting the device.
+Determine your device IP (using router, software, ping ...)
 </p>
 
 <p class='note warning'>
@@ -59,7 +59,7 @@ This component is tested to work with the following models. If you have a differ
 - **YLDP02YL**: LED Bulb (Color)
 - **YLDP03YL**: LED Bulb (Color) - E26
 - **YLDD02YL**: Lightstrip (Color)
-
+- **YLXD01YL**: LED Ceiling Lamp
 
 
 
